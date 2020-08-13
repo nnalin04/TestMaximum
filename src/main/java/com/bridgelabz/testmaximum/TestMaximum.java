@@ -21,7 +21,12 @@ public class TestMaximum<E extends Comparable<E>> {
                 max = inputArray[i];
             }
         }
+        printMax(max);
         return max;
+    }
+
+    private static <E extends Comparable> void printMax(E max) {
+        System.out.println("the Max for "+ max.getClass().getSimpleName() +" is "+ max);
     }
 
     public static void main(String[] args) {
