@@ -21,7 +21,6 @@ public class TestMaximum<E extends Comparable<E>> {
                 max = inputArray[i];
             }
         }
-        printMax(max);
         return max;
     }
 
@@ -33,7 +32,4 @@ public class TestMaximum<E extends Comparable<E>> {
         new TestMaximum(floatArray, floatArray.length).testMaximum();
         new TestMaximum(stringArray, stringArray.length).testMaximum();
     }
-
-
-
 }
