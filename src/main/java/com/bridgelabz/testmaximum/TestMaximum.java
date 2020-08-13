@@ -2,26 +2,38 @@ package com.bridgelabz.testmaximum;
 
 public class TestMaximum<E extends Comparable<E>> {
 
-    E input1, input2, input3;
+    int arrayLength;
+    E[] inputArray;
 
-    TestMaximum(E input1, E input2, E input3){
-        this.input1 = input1;
-        this.input2 = input2;
-        this.input3 = input3;
+    TestMaximum( E[] inputArray, int arrayLength){
+        this.inputArray = inputArray;
+        this.arrayLength = arrayLength;
     }
 
     public E testMaximum(){
-        return inputWithMaxValue(input1, input2, input3);
+        return inputWithMaxValue(inputArray, arrayLength);
     }
 
-    public static <E extends Comparable> E inputWithMaxValue(E input1, E input2, E input3){
-        E max = input1;
-        if(input2.compareTo(max) > 0){
-            max = input2;
+    public static <E extends Comparable> E inputWithMaxValue(E[] inputArray, int arrayLength){
+        E max = inputArray[0];
+        for(int i=1;i< arrayLength;i++){
+            if(inputArray[i].compareTo(max) > 0){
+                max = inputArray[i];
+            }
         }
-        if(input3.compareTo(max) > 0){
-            max = input3;
-        }
+        printMax(max);
         return max;
     }
+
+    public static void main(String[] args) {
+        Integer[] integerArray = {3,2,1};
+        Float[] floatArray = {1.1f, 2.2f, 3.3f};
+        String[] stringArray = {"Apple", "Banana", "Peach"};
+        new TestMaximum(integerArray, integerArray.length).testMaximum();
+        new TestMaximum(floatArray, floatArray.length).testMaximum();
+        new TestMaximum(stringArray, stringArray.length).testMaximum();
+    }
+
+
+
 }
