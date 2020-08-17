@@ -5,7 +5,7 @@ public class TestMaximum<E extends Comparable<E>> {
     int arrayLength;
     E[] inputArray;
 
-    TestMaximum( E[] inputArray, int arrayLength){
+    public TestMaximum(int arrayLength, E[] inputArray){
         this.inputArray = inputArray;
         this.arrayLength = arrayLength;
     }
@@ -33,8 +33,8 @@ public class TestMaximum<E extends Comparable<E>> {
         Integer[] integerArray = {3,2,1};
         Float[] floatArray = {1.1f, 2.2f, 3.3f};
         String[] stringArray = {"Apple", "Banana", "Peach"};
-        new TestMaximum(integerArray, integerArray.length).testMaximum();
-        new TestMaximum(floatArray, floatArray.length).testMaximum();
-        new TestMaximum(stringArray, stringArray.length).testMaximum();
+        new TestMaximum(integerArray.length, integerArray).testMaximum();
+        new TestMaximum(floatArray.length, floatArray).testMaximum();
+        new TestMaximum(stringArray.length, stringArray).testMaximum();
     }
 }
