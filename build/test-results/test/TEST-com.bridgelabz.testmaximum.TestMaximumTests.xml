@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.bridgelabz.testmaximum.TestMaximumTests" tests="9" skipped="0" failures="0" errors="0" timestamp="2020-08-17T13:23:46" hostname="EEE1407203" time="0.019">
+  <properties/>
+  <testcase name="givenFloats_2stPositionIsMax_shouldReturn2stFloat" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.012"/>
+  <testcase name="givenString_3stPositionIsMax_shouldReturn3stString" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.001"/>
+  <testcase name="givenString_2stPositionIsMax_shouldReturn2stString" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.0"/>
+  <testcase name="givenString_1stPositionIsMax_shouldReturn1stString" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.001"/>
+  <testcase name="givenNumbers_3rdPositionIsMax_shouldReturn3rdNumber" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.001"/>
+  <testcase name="givenNumbers_2ndPositionIsMax_shouldReturn2ndNumber" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.001"/>
+  <testcase name="givenNumbers_1stPositionIsMax_shouldReturn1stNumber" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.001"/>
+  <testcase name="givenFloats_3stPositionIsMax_shouldReturn3stFloat" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.0"/>
+  <testcase name="givenFloats_1stPositionIsMax_shouldReturn1stFloat" classname="com.bridgelabz.testmaximum.TestMaximumTests" time="0.0"/>
+  <system-out><![CDATA[the Max for Float is 3.3
+the Max for String is Peach
+the Max for String is Peach
+the Max for String is Peach
+the Max for Integer is 3
+the Max for Integer is 3
+the Max for Integer is 3
+the Max for Float is 3.3
+the Max for Float is 3.3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
